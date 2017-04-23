@@ -1,9 +1,10 @@
 import { SHOW_MODAL, HIDE_MODAL } from '../constants';
 
 const modal = (action) => {
-    let { modalClass } = action;
+    let { modalClass, customer } = action;
     return {
-        modalClass
+        modalClass,
+        customer
     }
 };
 

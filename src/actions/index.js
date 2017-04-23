@@ -1,9 +1,10 @@
 import { SHOW_MODAL, HIDE_MODAL } from '../constants';
 
-export const showModal = (modalClass) => {
+export const showModal = (modalClass, customer) => {
     const action = {
         type: SHOW_MODAL,
-        modalClass
+        modalClass,
+        customer
     };
     console.log('showing Modal in actions', action);
     return action;
