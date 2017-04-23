@@ -2,6 +2,11 @@
     margin:2%;
 }
 
+a{
+    cursor: pointer;
+    color: rgb(61, 122, 202);
+}
+
 .displayed{
     transition-property: visibility, opacity;
     transition-duration: 0s, 1s;
@@ -51,12 +56,7 @@
 .modal-footer{
     padding: 10px 15px;
     text-align: right;
-    border-top: 1px solid #eee;
-}
-
-.modal-footer a{
-    cursor: pointer;
-    color: rgb(61, 122, 202);
+    border-top: 1px solid #ccc;
 }
 
 .card{
@@ -79,9 +79,7 @@
 
 .customerInfo{
     display: inline-block;
-    vertical-align: top;
-    white-space: normal;
-    padding-right: 90px;
+    padding-right: 10px;
 }
 
 .customerInfo h3{

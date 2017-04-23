@@ -62,7 +62,7 @@ class CustomerCard extends Component{
                     <div className="modal-content">
                         <p>{this.showTitleCard(this.state.customer)}</p>
                         <footer className="modal-footer">
-                            <a onClick={() => this.hideModal()} className="btn btn-primary js-close-modal-trigger">Close</a>
+                            <a onClick={() => this.hideModal()}>Close</a>
                         </footer>
                     </div>
                 </div>

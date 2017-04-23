@@ -17,7 +17,7 @@ const modals = (state = [], action) => {
         case HIDE_MODAL:
             modals = [...state, modal(action)];
             return modals;
-        //This case was not required but it gives sense to using actions
+        //In case it is needed to add customers
 /*        case ADD_CUSTOMER:
             customers = [...state, customer(action)];
             return customers;*/
