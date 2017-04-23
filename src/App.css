@@ -12,9 +12,8 @@
 
 /* The Modal (background) */
 .modal {
-    display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    z-index: 1000; /* Sit on top */
     padding-top: 100px; /* Location of the box */
     left: 0;
     top: 0;
@@ -23,6 +22,9 @@
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+
+    transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 20ms;
+
 }
 
 /* Modal Content */
@@ -47,4 +49,63 @@
     color: #000;
     text-decoration: none;
     cursor: pointer;
+}
+
+
+
+
+
+.card{
+    padding: 16px;
+    font-weight: 500;
+    box-sizing: border-box;
+    position: relative;
+    white-space: nowrap;
+    background-color: #fff;
+
+    font-family: Roboto, sans-serif;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    box-shadow: rgba(0, 0, 0, 0.12) 0 1px 6px, rgba(0, 0, 0, 0.12) 0 1px 4px;
+    border-radius: 2px;
+    z-index: 1;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.customerInfo{
+    display: inline-block;
+    vertical-align: top;
+    white-space: normal;
+    padding-right: 90px;
+}
+
+.customerInfo h3{
+    margin: 0;
+    font-weight: 100;
+    color: rgb(61, 122, 202);
+}
+
+.customerInfo h4{
+    margin-top: 5px;
+    margin-bottom: 0;
+    color: rgba(0, 0, 0, 0.541176);
+    display: block;
+    font-size: 14px;
+}
+
+button.arrow-icon{
+    background-image: url(../public/icon-arrow-right.png);
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #fff;
+    border: 0;
+    cursor: pointer;
+    margin: auto;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 0;
+    bottom: 0;
+    right: 10px;
 }
